@@ -1,0 +1,62 @@
+.post__img-box{
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  &:hover{
+    .post__img-cover{
+      display: block;
+    }
+  }
+}
+
+.post__title{
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  margin-top: 10px;
+  color: #000;
+}
+
+.post__description{
+  text-align: left;
+  font-size: 12px;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.post__img-cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  a{
+    font-size: 23px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
+
+.post__domain{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  svg{
+    width: 15px;
+    height: 15px;
+  }
+  path{
+    fill: #ffffff;
+  }
+}
