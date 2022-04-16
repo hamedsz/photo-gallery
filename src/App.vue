@@ -9,7 +9,7 @@
       <div class="row mt-5">
         <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6 col-x" v-for="i in columns" :key="i">
           <PostItem
-              v-for="col in columnData(i-1)" :key="col.page_id"
+              v-for="(col, index) in columnData(i-1)" :key="index"
               :img_url="col.image_url"
               :title="col.name"
               :description="col.description"

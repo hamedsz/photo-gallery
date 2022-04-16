@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="tag-container">
+    <div class="tag-container" v-if="tags != null">
       <div class="tag-list d-flex mt-2" :id="'tag_'+ id">
         <div class="tag" v-for="tag in listTags" :key="tag">
           {{ tag }}
@@ -50,7 +50,10 @@ export default {
   },
   computed: {
     listTags(){
-      return this.tags.split(",")
+      if (typeof this.tags === "string"){
+        return this.tags.split(",")
+      }
+      return null
     }
   },
   name: "PostItem",
