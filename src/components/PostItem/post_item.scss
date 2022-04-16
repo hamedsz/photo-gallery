@@ -60,3 +60,56 @@
     fill: #ffffff;
   }
 }
+
+.tag-container{
+  position: relative;
+}
+
+.tag-list{
+  white-space: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  .left{
+    width: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(255, 255, 255) 25%, rgba(255, 255, 255, 0) 100%);
+    svg{
+      width: 10px;
+      height: 10px;
+      path{
+        fill: #333;
+      }
+    }
+  }
+  .right{
+    width: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(255, 255, 255) 25%, rgba(255, 255, 255, 0) 100%);
+    svg{
+      width: 10px;
+      height: 10px;
+      path{
+        fill: #333;
+      }
+    }
+  }
+}
+
+.tag{
+  color: #000000;
+  background: #eee;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
